@@ -108,10 +108,8 @@ boost cmake zlib glib-2.0 packagegroup-fsl-tools-testapps git glive \
     cairo pango fontconfig freetype pulseaudio dbus \
     alsa-lib alsa-tools alsa-state alsa-utils-alsaconf fsl-alsa-plugins \
     i2c-tools \ 
-    qmlpresentationsystem-qmlplugins \
     qt5launchdemo \
     qt5ledscreen \
-    qt5-demo-extrafiles \ 
 "
 
 #PACKAGECONFIG_append_pn-qtmultimedia = " gstreamer010"
