@@ -73,7 +73,8 @@ boost cmake zlib glib-2.0 packagegroup-fsl-tools-testapps git glive \
     alsa-lib alsa-tools alsa-state alsa-utils-alsaconf fsl-alsa-plugins \
     i2c-tools \
 "
-
+PACKAGECONFIG_append_pn-qtmultimedia = " gstreamer010"
+PACKAGECONFIG_append_pn-qtbase = " sql-sqlite gstreamer gst-plugins-base accessibility pulseaudio "
 
 #LICENSE = "MIT"
 export IMAGE_BASENAME = "hio-image-fb"
