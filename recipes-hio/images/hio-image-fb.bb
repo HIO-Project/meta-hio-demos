@@ -1,7 +1,7 @@
 require recipes-core/images/core-image-minimal.bb
 
 IMAGE_INSTALL += " \
-        hio-version hio-wifi hio-bass hio-eth hio-rc-local hio-image \
+        hio-version hio-wifi hio-bass hio-rc-local hio-image \
 "
 
 IMAGE_INSTALL_append = " gcc g++ binutils libgcc libgcc-dev libstdc++ libstdc++-dev libstdc++-staticdev \
