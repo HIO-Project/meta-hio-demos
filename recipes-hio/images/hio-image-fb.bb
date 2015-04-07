@@ -31,7 +31,6 @@ boost cmake zlib glib-2.0 packagegroup-fsl-tools-testapps git glive \
     openssh-sftp-server \
     packagegroup-fsl-gstreamer \
     packagegroup-fsl-tools-testapps \
-    packagegroup-fsl-tools-benchmark \
     imx-vpu \
     imx-test \
     qtbase-fonts \
