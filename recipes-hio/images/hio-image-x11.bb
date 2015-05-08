@@ -1,6 +1,10 @@
 #include recipes-core/images/core-image-minimal.bb
 include recipes-sato/images/core-image-sato.bb
 
+#add test base
+IMAGE_INSTALL_append = " iozone3 iperf fio lmbench cpuburn-neon memtester minicom sysstat nmon "
+IMAGE_INSTALL_append = " libfslcodec libfslparser libfslvpuwrap "
+
 IMAGE_INSTALL += " \
         wpa-supplicant wireless-tools alsa-lib alsa-tools alsa-state alsa-utils-alsaconf curl fio iperf \
         hio-version hio-wifi hio-bass hio-rc-local hio-image \
