@@ -1,5 +1,6 @@
 #include recipes-core/images/core-image-minimal.bb
-include recipes-sato/images/core-image-sato.bb
+#include recipes-sato/images/core-image-sato.bb
+include recipes-fsl/images/fsl-image-machine-test.bb
 
 #add test base
 IMAGE_INSTALL_append = " iozone3 iperf fio lmbench cpuburn-neon memtester minicom sysstat nmon "
@@ -117,4 +118,19 @@ boost cmake zlib glib-2.0 packagegroup-fsl-tools-testapps git glive \
 #PACKAGECONFIG_append_pn-qtbase = " sql-sqlite gstreamer gst-plugins-base xcb accessibility pulseaudio gtkstyle"
 #IMAGE_INSTALL_append += "pulseaudio-server"
 
-export IMAGE_BASENAME = "hio-image-x11"
+IMAGE_FEATURES += " \
+    tools-sdk \
+    ssh-server-openssh \
+    package-management \
+"
+
+DISTRO_FEATURES += " pulseaudio "
+
+IMAGE_INSTALL += " \
+    packagegroup-core-x11 \
+    xrdb \
+    nano \
+    cpufrequtils \
+    packagegroup-xfce-extended \
+"
+export IMAGE_BASENAME = "hio-image-xfce"
