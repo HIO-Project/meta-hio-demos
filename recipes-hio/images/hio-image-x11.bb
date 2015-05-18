@@ -27,7 +27,6 @@ boost cmake zlib glib-2.0 packagegroup-fsl-tools-testapps git glive \
 	openssh-sftp-server \
  	alsa-lib \
 	alsa-tools \
-	alsa-state \
 	alsa-utils-alsaconf \
 	coreutils \
 	elfutils-dev \
@@ -109,7 +108,7 @@ boost cmake zlib glib-2.0 packagegroup-fsl-tools-testapps git glive \
     qtlocation-qmlplugins \
     cinematicexperience \
     cairo pango fontconfig freetype pulseaudio dbus \
-    alsa-lib alsa-tools alsa-state alsa-utils-alsaconf fsl-alsa-plugins \
+    alsa-lib alsa-tools alsa-utils-alsaconf fsl-alsa-plugins \
     i2c-tools \ 
 "
 
