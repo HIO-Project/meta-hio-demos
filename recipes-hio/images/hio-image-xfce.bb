@@ -8,7 +8,7 @@ IMAGE_INSTALL_append = " libfslcodec libfslparser libfslvpuwrap "
 
 IMAGE_INSTALL += " \
         wpa-supplicant wireless-tools alsa-lib alsa-tools alsa-utils-alsaconf curl fio iperf \
-        hio-version hio-wifi hio-bass hio-rc-local hio-image \
+        hio-version hio-wifi hio-bass hio-rc-local hio-image alsa-state-rt5631 \
 "
 
 IMAGE_INSTALL_append = " g++ binutils libstdc++ libstdc++-dev libstdc++-staticdev \

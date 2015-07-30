@@ -5,7 +5,7 @@ IMAGE_INSTALL_append = " iozone3 iperf fio lmbench cpuburn-neon memtester minico
 IMAGE_INSTALL_append = " libfslcodec libfslparser libfslvpuwrap "
 
 IMAGE_INSTALL += " \
-        hio-version hio-wifi hio-bass hio-rc-local hio-image \
+        hio-version hio-wifi hio-bass hio-rc-local hio-image alsa-state-rt5631 \
 "
 
 IMAGE_INSTALL_append = " gcc g++ binutils libgcc libgcc-dev libstdc++ libstdc++-dev libstdc++-staticdev \
